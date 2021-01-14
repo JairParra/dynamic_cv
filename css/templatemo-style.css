@@ -70,7 +70,7 @@ a {
 }
 a:hover,
 a:focus {
-  color: #fff;
+  color: lightblue;
   outline: none;
   text-decoration: underline;
 }
