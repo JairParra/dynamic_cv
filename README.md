@@ -1,5 +1,12 @@
+![img/portfolio.jpg]
+
 # dynamic_cv
-Dynamic CV with integrated HTML, CSS and Javascript.
+Responsive personal portfolio website with the usage of the following programming languages, frameworks and tools: 
+- HTML 
+- CSS3
+- Bootstrap
+- Javascript
+- JQuery
 
 ## link
 The site is available and published at https://jairparraml.com
