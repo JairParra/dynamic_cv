@@ -1,4 +1,4 @@
-![img/portfolio.jpg]
+![images/portfolio.jpg]
 
 # dynamic_cv
 Responsive personal portfolio website with the usage of the following programming languages, frameworks and tools: 
