@@ -117,7 +117,7 @@ let myChart2 = document.getElementById('myChart2').getContext('2d'); // fetch fr
 let massPopChart2 = new Chart(myChart2, {
     type:'pie', // bar, horizontal_par, pie, line, donut, radar, polar area 
     data:{
-        labels:['Data Visualization','Machine Learning','NLP','Data Engineering','Deep Learning','Data Analysis'], // an array 
+        labels:['Data Visualization','Machine Learning','Natural Language Processing','Data Engineering','Deep Learning','Data Analysis'], // an array 
         datasets:[{
             label:'Skill', 
             data: [75, 80, 75, 60, 90, 80],  // array of numbers 
@@ -143,19 +143,28 @@ let massPopChart2 = new Chart(myChart2, {
     options:{
         // legend parameters 
         legend: {
+            display: false, 
             labels:{ 
                 fontColor: 'white'
             }
         }, 
-        labels: { 
-            render: 'label'
-        }
-        , 
+        // labels: { 
+        //     render: 'label'
+        // }
+        // , 
         plugins: { 
             labels: { 
-                fontColor: "#FDFEFE"
+                render: 'label', 
+                fontColor: "#FDFEFE", 
+                position: 'outside'
             }
-        }
+        }, 
+        // assign title 
+        title: { 
+            display: true, 
+            text: "Data Science Skills", 
+            fontColor: "#FDFEFE" 
+        }, 
     } // note: {} is an object type in javascript
 }); 
 
@@ -208,8 +217,6 @@ var radarChart = new Chart(marksCanvas, {
         }
     }
 });
-
-
 
 
 /*************************************************************************************************/
