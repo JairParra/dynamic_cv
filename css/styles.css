@@ -8,8 +8,63 @@
     color: lightblue;
 }
 
+.reading-table{ 
+    background: transparent;
+    color: white;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    text-align: center;
+    margin-left: 10%; 
+    margin-right: 10%;
+}
+
+.from-left{ 
+    position: relative; 
+    margin-left: 0%;
+    height: max-content;
+    width: 40%;
+    padding-right: 5%;
+}
+
+.from-center{ 
+    position: relative; 
+    height: max-content;
+    width: max-content;
+    padding-right: 5%;
+    width: 40%;
+}
+
+.from-right{ 
+    position: absolute; 
+    margin-right: 20%;
+    height: max-content;
+    width: max-content;
+    width: 40%;
+}
+
+.center1 { 
+    position: relative;
+    top: 100%;
+    left: 50%;
+    margin-right: 50%;
+    text-align: center;
+    right: 0;
+    margin: auto;
+  }
+
+
+
 /************************ID SELECTORS**************************/
 
 #circular--square0 {
     border-radius: 50%;
+}
+
+#graph-test { 
+    position: absolute; 
+    left: 25%; 
+    top: 25%;
+    width: 50%; 
+    height: 50%;
 }
