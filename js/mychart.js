@@ -3,7 +3,7 @@ Chart.defaults.global.responsive = true
 
 /*************************************************************************************************/
 
-/* First Chart*/
+/* First Chart: Barplot*/
 
 // create a variable for our chart 
 let myChart = document.getElementById('myChart').getContext('2d'); // fetch from canvas 
@@ -108,7 +108,7 @@ let massPopChart = new Chart(myChart, {
 
 /*************************************************************************************************/
 
-/* Second Chart*/
+/* Second Chart: Pie Chart*/
 
 // create a variable for our chart 
 let myChart2 = document.getElementById('myChart2').getContext('2d'); // fetch from canvas 
@@ -120,7 +120,7 @@ let massPopChart2 = new Chart(myChart2, {
         labels:['Data Visualization','Machine Learning','Natural Language Processing','Data Engineering','Deep Learning','Data Analysis'], // an array 
         datasets:[{
             label:'Skill', 
-            data: [75, 80, 75, 60, 90, 80],  // array of numbers 
+            data: [75, 80, 75, 60, 80, 85],  // array of numbers 
             backgroundColor: [
                 'rgba(255, 99, 132, 0.5)',
                 'rgba(54, 162, 235, 0.5)',
@@ -153,11 +153,17 @@ let massPopChart2 = new Chart(myChart2, {
         // }
         // , 
         plugins: { 
-            labels: { 
-                render: 'label', 
-                fontColor: "#FDFEFE", 
-                position: 'outside'
-            }
+            labels: [
+                { 
+                    render: 'label', 
+                    fontColor: "#FDFEFE", 
+                    position: 'outside'
+                },
+                {
+                    render: 'percentage', 
+                    fontColor: "#FDFEFE",
+                }
+            ] 
         }, 
         // assign title 
         title: { 
