@@ -39,7 +39,8 @@ let massPopChart = new Chart(myChart, {
                 'rgba(54, 162, 235, 1)',
                 'rgba(255, 206, 86, 1)',
             ],
-            borderwith: 1
+            borderwith: 1, 
+            barPercentage: 0.8
         }], 
     },
     options:{
@@ -88,6 +89,18 @@ let massPopChart = new Chart(myChart, {
             display: true, 
             text: "Language Skills", 
             fontColor: "#FDFEFE" 
+        }, 
+        ticks: {
+            //.. Other settings
+            callback: function(value, index, values) {
+                return ((value / 800) * 100) + '%';
+            }
+        }, 
+        plugins: {
+            labels: { 
+                render: () => {}, 
+                fontColor: "#FDFEFE"
+            }
         }
     } // note: {} is an object type in javascript
 }); 
