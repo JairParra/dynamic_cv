@@ -82,21 +82,30 @@ https://templatemo.com/tm-528-elegance
             </div>
         </header>
 
-        <video autoplay muted loop id="myVideo">
+        <video autoplay muted id="myVideo">
           <source src="images/video_bg.mp4" type="video/mp4">
         </video>
 
         <script>
+
             // Obtain background video id in the DOM 
             var v = document.getElementById("myVideo"); 
             
             // alter playback rate
-            function Set_VideoRate(rate=0.5) {  
+            function setVideoRate(rate=0.3) {  
                 v.playbackRate = rate; 
-            }  
+            } 
 
-            // set rate by default
-            Set_VideoRate(); 
+            // // set rate by default
+            // setTimeout(function(){ 
+            //     setVideoRate(rate=0.0) 
+            // }, 4000);
+
+            // Advance video to a end point and freeze
+            document.getElementById('myVideo').addEventListener('loadedmetadata', function() {
+                this.currentTime = 1000;
+            }, false);
+
         </script>
 
         <!--Full page starts-->
@@ -273,7 +282,6 @@ https://templatemo.com/tm-528-elegance
                     </div>
                 </div>
             </div>
-
 
 
 

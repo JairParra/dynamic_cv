@@ -240,9 +240,19 @@ let massPopChart4 = new Chart(myChart4, {
         datasets:[
             {
                 label:'2020 Git Commits', 
-                data: [41, 123, 199, 320, 380, 391, 392, 396, 440, 459, 459, 459],  // array of numbers 
+                data: [41, 82, 76, 121, 60, 11, 1, 4, 44, 19, 0, 0], 
+                // data: [41, 123, 199, 320, 380, 391, 392, 396, 440, 459, 459, 459],  // array of numbers 
                 borderColor: [
                     'rgba(0, 191, 255, 1)',
+                ],
+                borderwith: 1
+            }, 
+            {
+                label:'MA(2)', 
+                data: [41, 61, 79, 98, 90, 35, 6, 2, 24, 31, 9, 0], 
+                // data: [41, 82, 121, 170, 212, 242, 263, 280, 298, 314, 355, 389],  // array of numbers 
+                borderColor: [
+                    'rgba(255, 99, 132, 1)',
                 ],
                 borderwith: 1
             }, 
@@ -250,10 +260,12 @@ let massPopChart4 = new Chart(myChart4, {
                 label:'2021 Git Commits', 
                 data: [0, 11],  // array of numbers 
                 borderColor: [
-                    'rgba(255, 99, 132, 1)',
+                    'rgba(255, 206, 86, 1)',
                 ],
                 borderwith: 1
-            },         ], 
+            },  
+            
+        ], 
     },
     options:{
         elements: { 
