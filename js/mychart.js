@@ -248,7 +248,7 @@ let massPopChart4 = new Chart(myChart4, {
                 borderwith: 1
             }, 
             {
-                label:'MA(2)', 
+                label:'2020 MA(2)', 
                 data: [41, 61, 79, 98, 90, 35, 6, 2, 24, 31, 9, 0], 
                 // data: [41, 82, 121, 170, 212, 242, 263, 280, 298, 314, 355, 389],  // array of numbers 
                 borderColor: [
