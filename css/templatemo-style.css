@@ -155,7 +155,8 @@ video {
   opacity:0.95;
 }
 .section-inner {
-  padding:20px 30px 0;
+  /* padding:20px 30px 0; */
+  padding:0 0 0;
 }
 .fp-scrollable {
   height:calc(100vh - 200px) !important;
