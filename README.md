@@ -6,7 +6,8 @@ Responsive personal portfolio website with the usage of the following programmin
 - CSS3
 - Bootstrap4
 - Javascript (ECS6)
-- JQuery
+  - JQuery
+  - ChartJs
 
 ## link
 The site is available and published at https://jairparraml.com
