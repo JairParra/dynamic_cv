@@ -258,7 +258,7 @@ let massPopChart4 = new Chart(myChart4, {
             }, 
             {
                 label:'2021 Git Commits', 
-                data: [0, 20, 0],  // array of numbers 
+                data: [44, 23, 17, 2],  // array of numbers 
                 borderColor: [
                     'rgba(255, 206, 86, 1)',
                 ],

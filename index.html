@@ -88,22 +88,8 @@ https://templatemo.com/tm-528-elegance
           <source src="images/video_bg.mp4" type="video/mp4">
         </video>
 
-        <!--Set autoplay to be slower-->
-        <script>
-            // Obtain background video id in the DOM 
-            var v = document.getElementById("myVideo"); 
-            
-            // alter playback rate
-            function setVideoRate(rate=0.3) {  
-                v.playbackRate = rate; 
-            } 
-
-            // set rate by default
-            setTimeout(function(){ 
-                setVideoRate(rate=0.5) 
-            }, 4000);
-
-        </script>
+        <!--Set autoplay to be slower (custom script)-->
+        <script src="js/videoload.js"></script>
 
         <!--Start Full page div -->
         <div id="fullpage" class="fullpage-default">
