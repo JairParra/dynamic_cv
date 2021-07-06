@@ -4,7 +4,7 @@
 Responsive personal portfolio website with the usage of the following programming languages, frameworks and tools: 
 - HTML5
 - CSS3
-- Bootstrap4
+- Bootstrap5
 - Javascript (ECS6)
   - JQuery
   - ChartJs
