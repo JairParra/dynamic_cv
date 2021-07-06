@@ -12,10 +12,10 @@ let myChart = document.getElementById('myChart').getContext('2d'); // fetch from
 let massPopChart = new Chart(myChart, {
     type:'bar', // bar, horizontal_par, pie, line, donut, radar, polar area 
     data:{
-        labels:['Spanish','English','French','Italian','Portuguese','Mandarin','Japanese','Russian','Korean'], // an array 
+        labels:['Spanish','English','French','Mandarin','Japanese','Italian','Portuguese','Russian','Korean'], // an array 
         datasets:[{
             label:'Skill level', 
-            data: [100, 95, 85, 70, 70, 70, 70, 30, 10],  // array of numbers 
+            data: [100, 95, 85, 75, 70, 70, 60, 30, 10],  // array of numbers 
             backgroundColor: [
                 'rgba(255, 99, 132, 0.5)',
                 'rgba(54, 162, 235, 0.5)',
@@ -258,7 +258,7 @@ let massPopChart4 = new Chart(myChart4, {
             }, 
             {
                 label:'2021 Git Commits', 
-                data: [44, 23, 17, 2],  // array of numbers 
+                data: [44, 23, 17, 2, 8, 1, 6],  // array of numbers 
                 borderColor: [
                     'rgba(255, 206, 86, 1)',
                 ],
